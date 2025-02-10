@@ -29,6 +29,49 @@
             <audio src="音频文件/杯糕姐.mp3" alt="sexy lady " controls="controls">
                 
             </audio>
+                      <div id="player-container">
+        <!-- 播放器容器 -->
+        <div id="player">
+            <!-- 播放器 -->
+            <div id="playlist">
+                <!-- 播放列表 -->
+                <h3>Playlist</h3>
+                <!-- 播放列表标题 -->
+                <ul id="track-list">
+                    <!-- 播放列表 -->
+                </ul>
+            </div>
+            <div id="controls">
+                <!-- 控制区 -->
+                <div id="track-info">
+                    <!-- 曲目信息 -->
+                    <span id="track-title">Select a track</span>
+                    <!-- 当前曲目标题 -->
+                </div>
+                <div id="progress-container">
+                    <!-- 进度条容器 -->
+                    <input type="range" id="progress-bar" value="0" max="100">
+                    <!-- 进度条 -->
+                </div>
+                <div id="buttons">
+                    <!-- 控制按钮 -->
+                    <button id="prev-button">Prev</button>
+                    <!-- 上一曲按钮 -->
+                    <button id="play-button">Play</button>
+                    <!-- 播放/暂停按钮 -->
+                    <button id="next-button">Next</button>
+                    <!-- 下一曲按钮 -->
+                </div>
+                <div id="volume-container">
+                    <!-- 音量控制容器 -->
+                    <input type="range" id="volume-bar" value="100" max="100">
+                    <!-- 音量控制条 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+    <!-- 引入外部JavaScript文件 -->
         </div>
     </section>
     <footer>
