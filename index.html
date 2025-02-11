@@ -10,6 +10,21 @@
     <!-- 引入外部样式表 -->
 </head>
 <body>
+    <script>
+        // 检测屏幕方向
+        window.addEventListener("orientationchange", function() {
+            if (window.orientation === 0) {
+                console.log("竖屏模式");
+            } else {
+                console.log("横屏模式");
+            }
+        });
+
+        // 确保DOM加载完成后执行
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("DOM已加载");
+        });
+    </script>
     <header>
         <h1>欢迎来到查网</h1>
         <!--Zha website 4.5.7-->
