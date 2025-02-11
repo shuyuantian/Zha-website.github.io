@@ -324,3 +324,17 @@ footer {
     width: 100%;
     /* 设置宽度 */
 }
+
+/* 竖屏样式 */
+     @media screen and (orientation: portrait) {
+         body {
+             background-color: lightblue;
+         }
+     }
+
+     /* 横屏样式 */
+     @media screen and (orientation: landscape) {
+         body {
+             background-color: lightgreen;
+         }
+     }
