@@ -6,6 +6,7 @@
     <title>Zha website</title>
     <link rel="stylesheet" href="Zha website.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/music-player-styles.css">
     <!-- 引入外部样式表 -->
 </head>
 <body>
@@ -17,7 +18,7 @@
     <section class="introduction">
         <h2>关于查钧涵</h2>
         <p>你好</p>
-        <p1>查钧涵是一位28中学的学生……（敬请期待）</p1>
+        <p>查钧涵是一位28中学的学生……（敬请期待）</p>
     </section>
     <section class="gallery">
         <h2>图片展示</h2>
@@ -28,53 +29,86 @@
             <img src="IMG_20241225_101258.jpg" alt="美醉了3">
             <img src="Image_69492309602911.jpg" alt="美醉了4">
             <img src="Image_69493711635218.png" alt="美醉了5">
-            <audio src="音频文件/杯糕姐.mp3" alt="sexy lady " controls="controls">
-                
-            </audio>
+            <audio src="音频文件/杯糕姐.mp3" alt="sexy lady " controls="controls"></audio>
+        </div>
+    </section>
+    <section class="music-player">
+        <!-- 音乐播放器 -->
         <div id="player-container">
-        <!-- 播放器容器 -->
-        <div id="player">
-            <!-- 播放器 -->
-            <div id="playlist">
-                <!-- 播放列表 -->
-                <h3>Playlist</h3>
-                <!-- 播放列表标题 -->
-                <ul id="track-list">
+            <!-- 播放器容器 -->
+            <div id="player">
+                <!-- 播放器 -->
+                <div id="playlist">
                     <!-- 播放列表 -->
-                </ul>
-            </div>
-            <div id="controls">
-                <!-- 控制区 -->
-                <div id="track-info">
-                    <!-- 曲目信息 -->
-                    <span id="track-title">Select a track</span>
-                    <!-- 当前曲目标题 -->
+                    <h3>Playlist</h3>
+                    <!-- 播放列表标题 -->
+                    <ul id="track-list">
+                        <!-- 播放列表 -->
+                    </ul>
                 </div>
-                <div id="progress-container">
-                    <!-- 进度条容器 -->
-                    <input type="range" id="progress-bar" value="0" max="100">
-                    <!-- 进度条 -->
-                </div>
-                <div id="buttons">
-                    <!-- 控制按钮 -->
-                    <button id="prev-button">Prev</button>
-                    <!-- 上一曲按钮 -->
-                    <button id="play-button">Play</button>
-                    <!-- 播放/暂停按钮 -->
-                    <button id="next-button">Next</button>
-                    <!-- 下一曲按钮 -->
-                </div>
-                <div id="volume-container">
-                    <!-- 音量控制容器 -->
-                    <input type="range" id="volume-bar" value="100" max="100">
-                    <!-- 音量控制条 -->
+                <div id="controls">
+                    <!-- 控制区 -->
+                    <div id="track-info">
+                        <!-- 曲目信息 -->
+                        <span id="track-title">Select a track</span>
+                        <!-- 当前曲目标题 -->
+                    </div>
+                    <div id="progress-container">
+                        <!-- 进度条容器 -->
+                        <input type="range" id="progress-bar" value="0" max="100">
+                        <!-- 进度条 -->
+                    </div>
+                    <div id="buttons">
+                        <!-- 控制按钮 -->
+                        <button id="prev-button">Prev</button>
+                        <!-- 上一曲按钮 -->
+                        <button id="play-button">Play</button>
+                        <!-- 播放/暂停按钮 -->
+                        <button id="next-button">Next</button>
+                        <!-- 下一曲按钮 -->
+                    </div>
+                    <div id="volume-container">
+                        <!-- 音量控制容器 -->
+                        <input type="range" id="volume-bar" value="100" max="100">
+                        <!-- 音量控制条 -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="音乐播放器/音乐播放器.js"></script>
-    <!-- 引入外部JavaScript文件 -->
+        <script src="音乐播放器/音乐播放器.js"></script>
+        <!-- 引入外部JavaScript文件 -->
+    </section>
+    <section class="ai-chat">
+        <!-- AI 对话框部分 -->
+        <div id="app-container">
+            <!-- 应用程序容器 -->
+            <h1>AI 对话框</h1>
+            <!-- 页面标题 -->
+            <div id="chat-container">
+                <!-- 聊天容器 -->
+                <div id="messages-container">
+                    <!-- 消息展示容器 -->
+                </div>
+                <div id="input-container">
+                    <!-- 输入容器 -->
+                    <input type="text" id="user-input" placeholder="输入你的消息..." />
+                    <!-- 用户输入框 -->
+                    <button id="send-button">发送</button>
+                    <!-- 发送按钮 -->
+                </div>
+            </div>
+            <div id="display-container">
+                <!-- 显示容器 -->
+                <div id="text-display">
+                    <!-- 文字展示框 -->
+                </div>
+                <div id="image-display">
+                    <!-- 图片展示框 -->
+                </div>
+            </div>
         </div>
+        <script src="js/scripts.js"></script>
+        <!-- 引入外部JavaScript文件 -->
     </section>
     <footer>
         <p>版权shuyuant所有 © 2024</p>
