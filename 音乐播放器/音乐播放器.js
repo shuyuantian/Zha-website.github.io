@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 播放曲目函数
         audio.play();
         // 播放音频
-        playButton.textContent = 'Pause';
+        playButton.textContent = '×';
         // 设置按钮文本为暂停
     }
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // 暂停曲目函数
         audio.pause();
         // 暂停音频
-        playButton.textContent = 'Play';
+        playButton.textContent = '○';
         // 设置按钮文本为播放
     }
 
