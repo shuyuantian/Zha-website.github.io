@@ -26,9 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // 获取下一曲按钮元素
     const volumeBar = document.getElementById('volume-bar');
     // 获取音量控制条元素
-    const currentTimeElement = document.getElementById('current-time');
-    const totalTimeElement = document.getElementById('total-time');
-    const volumePercentageElement = document.getElementById('volume-percentage');
 
     function loadTrack(index) {
         // 加载曲目函数
@@ -38,9 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // 设置音频源
         trackTitleElement.textContent = track.title;
         // 设置曲目标题
-        audio.addEventListener('loadedmetadata', () => {
-            totalTimeElement.textContent = formatTime(audio.duration);
-        });
     }
 
     function playTrack() {
@@ -103,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // 计算进度
         progressBar.value = progress;
         // 设置进度条值
-        currentTimeElement.textContent = formatTime(audio.currentTime);
     }
 
     function setProgress() {
@@ -118,13 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // 设置音量函数
         audio.volume = volumeBar.value / 100;
         // 设置音频音量
-        volumePercentageElement.textContent = `${volumeBar.value}%`;
-    }
-
-    function formatTime(seconds) {
-        const minutes = Math.floor(seconds / 60);
-        const secs = Math.floor(seconds % 60);
-        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
     }
 
     trackList.forEach((track, index) => {
