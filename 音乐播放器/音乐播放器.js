@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 等待DOM内容加载完成事件
     const trackList = [
-        { title: 'Track 1', src: 'path/to/track1.mp3' },
-        { title: 'Track 2', src: 'path/to/track2.mp3' },
-        { title: 'Track 3', src: 'path/to/track3.mp3' }
+        { title: 'Gee-Cupcakke/jiafei', src: '音频文件/杯糕姐.mp3' },
+        { title: 'SPOT!-Cupcakke/jiafei', src: '音频文件/SPOT.mp3' },
+        { title: 'wannabe-Cupcakke/jiafei', src: '音频文件/wannabe.mp3' }
     ];
     // 定义播放列表
 
