@@ -102,3 +102,24 @@
     width: 100%;
     /* 设置宽度 */
 }
+
+#progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#progress-container span {
+    width: 50px;
+    text-align: center;
+}
+
+#volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#volume-container span {
+    margin-left: 10px;
+}
