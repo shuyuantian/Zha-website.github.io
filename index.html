@@ -8,6 +8,91 @@
     <link rel="stylesheet" href="Zha website.css">
     <link rel="stylesheet" href="音乐播放器/音乐播放器.css">
     <!-- 引入外部样式表 -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('IMG_20241225_192909.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .introduction, .gallery {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+
+        h1, h2 {
+            color: #ffcc00;
+        }
+
+        .gallery-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery-container img {
+            width: 30%;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        /* 竖屏样式 */
+        @media screen and (orientation: portrait) {
+            body {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+
+            header, .introduction, .gallery, .music-player, .ai-chat, footer {
+                width: 100%;
+                max-width: 100%;
+                margin: 10px 0;
+            }
+
+            .gallery-container img {
+                width: 45%;
+            }
+
+            #app-container, #player-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            #messages-container, #text-display, #image-display {
+                height: 150px;
+            }
+        }
+    </style>
 </head>
 <body>
     <script>
