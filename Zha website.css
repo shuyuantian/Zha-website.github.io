@@ -338,3 +338,25 @@ footer {
              background-color: lightgreen;
          }
      }
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-row img {
+    width: 48%; /* 确保两张图片在一行内 */
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-row img:hover {
+    transform: scale(1.1);
+}
