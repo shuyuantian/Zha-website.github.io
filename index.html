@@ -152,6 +152,34 @@
         width: 100%;
     }
 }
+
+            /* 电脑端样式 */
+@media screen and (min-width: 1024px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 三列布局 */
+        gap: 20px; /* 图片间距 */
+        justify-items: center; /* 居中对齐 */
+    }
+
+    .gallery-container img {
+        width: 80%; /* 调整图片大小 */
+    }
+}
+
+/* 移动端样式 */
+@media screen and (max-width: 1023px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 两列布局 */
+        gap: 20px; /* 图片间距 */
+        justify-items: center; /* 居中对齐 */
+    }
+
+    .gallery-container img {
+        width: 80%; /* 调整图片大小 */
+    }
+}
         }
     </style>
 </head>
