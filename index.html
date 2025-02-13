@@ -127,6 +127,31 @@
         margin-bottom: 20px; /* 根据需要调整间距 */
     }
 }
+
+            /* 在电脑和移动设备上的布局 */
+@media screen and (min-width: 1024px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .gallery-container img {
+        width: 100%;
+    }
+}
         }
     </style>
 </head>
