@@ -95,6 +95,38 @@
             #text-display {
     margin-bottom: 20px; /* 根据需要调整间距 */
             }
+
+            /* 横屏样式 */
+@media screen and (orientation: landscape) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    header, .introduction, .gallery, .music-player, .ai-chat, footer {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .gallery-container img {
+        width: 45%;
+    }
+
+    #app-container, #player-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #messages-container, #text-display, #image-display {
+        height: 150px;
+    }
+
+    #text-display {
+        margin-bottom: 20px; /* 根据需要调整间距 */
+    }
+}
         }
     </style>
 </head>
